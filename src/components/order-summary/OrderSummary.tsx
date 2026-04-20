@@ -15,10 +15,6 @@ export default function OrderSummary() {
   const { handleConfirm, isLoading } = useOrderConfermation();
 
   const buttonContent = () => {
-    console.log("can confirm: ", canConfirm);
-    console.log("shippingSaved: ", shippingSaved);
-    console.log("book: ", book);
-    console.log("orderConfirmed: ", orderConfirmed);
     if (!canConfirm) return "Completa i dati per confermare";
     if (isLoading)
       return (
