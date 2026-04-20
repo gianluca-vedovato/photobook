@@ -34,7 +34,7 @@ export default function PagesStep() {
           value={[pages]}
           onValueChange={([v]) => setBookPages(v)}
           defaultValue={[20]}
-          min={2}
+          min={10}
           max={100}
           step={2}
           aria-label="Numero di pagine"
